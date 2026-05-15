@@ -3851,9 +3851,9 @@ window.__dcampToggleMenu = function(){
 
 <script>
 /* ════════════════════════════════════════════════════════════════════════════
- *  CONTACT FORM — sends every submission to info@dcampworld.com via Web3Forms.
+ *  CONTACT FORM — sends every submission to sales@dcampworld.com via Web3Forms.
  *  HOW TO ACTIVATE:
- *    1) Go to https://web3forms.com, enter info@dcampworld.com, you'll receive
+ *    1) Go to https://web3forms.com, enter sales@dcampworld.com, you'll receive
  *       an access key by email — copy it.
  *    2) Paste the key into WEB3FORMS_ACCESS_KEY below.
  *    3) Save and re-deploy. Done — no further confirmation required.
@@ -3955,7 +3955,7 @@ const DCAMP_FORM_ENDPOINT  = 'https://api.web3forms.com/submit';
     data.append('replyto', data.get('email') || '');
 
     if (!WEB3FORMS_ACCESS_KEY || WEB3FORMS_ACCESS_KEY === 'YOUR_ACCESS_KEY_HERE'){
-      msgEl.textContent = 'Form is not configured yet. Please email info@dcampworld.com directly.';
+      msgEl.textContent = 'Form is not configured yet. Please email sales@dcampworld.com directly.';
       msgEl.classList.add('show','error');
       submitBtn.disabled = false;
       submitBtn.textContent = 'Try again';
@@ -3981,7 +3981,7 @@ const DCAMP_FORM_ENDPOINT  = 'https://api.web3forms.com/submit';
       }
     } catch(err){
       console.error('Web3Forms error:', err);
-      msgEl.textContent = 'Could not send right now. Please email info@dcampworld.com directly.';
+      msgEl.textContent = 'Could not send right now. Please email sales@dcampworld.com directly.';
       msgEl.classList.add('show','error');
       submitBtn.disabled = false;
       submitBtn.textContent = 'Try again';
